@@ -2,5 +2,5 @@
 FROM ubuntu:14.04
 
 RUN apt-get update
-RUN apt-get iunstall -y nginx
+RUN apt-get install -y nginx
 RUN echo 'Hi,This is a test'
