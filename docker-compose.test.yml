@@ -1,11 +1,16 @@
 version: '2'
+
 services:
+
   test1:
     build: .
     command: sh run_tests.sh
+
   test2:
     build: 
       context: .
       dockerfile: Dockerfile-test
     command: echo "hi hi"
-
+  sut:
+    build: .
+    command: echo "sut"
