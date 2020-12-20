@@ -1,0 +1,16 @@
+FROM node:lts
+
+ARG NODE_ENV=test
+ENV NODE_ENV $NODE_ENV
+
+WORKDIR /code
+
+ARG PORT=80
+ENV PORT $PORT
+
+RUN npm install
+
+
+
+CMD [ "node", "src/server.js" ]
+
